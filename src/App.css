@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #0092ca;
+  --background-color: #eeeeee;
+  --font-color: #222831;
+}
+body {
+  background-color: var(--primary-color);
+  height: 100% !important;
+}

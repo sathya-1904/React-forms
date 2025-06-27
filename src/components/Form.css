@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+h2 {
+  text-align: center;
+}
+.errors {
+  color: red;
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 10px 0;
+}
+.inputDiv.inputRadio {
+  display: flex !important;
+  flex-direction: row;
+  gap: 5px;
+}
+.inputDiv.inputRadio .inputLabel {
+  margin-right: 10px;
+}
+.inputDiv.field-wrapper input {
+  float: right;
+}
+.inputDiv.required-field label::after {
+  content: "*";
+  color: red;
+}
+.inputBox {
+  padding: 5px;
+  outline: none;
+  border: 1px solid var(--font-color);
+  border-radius: 5px;
+}
+.inputLabel {
+  font-size: 17px;
+  font-weight: 500;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+.buttonDiv button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 15px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+.buttonDiv .buttonReset {
+  border: 1px solid var(--primary-color);
+  padding: 5px 0;
+  border-radius: 5px;
+}
+.buttonDiv .buttonReset:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 5px 0;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.buttonDiv .buttonSubmit {
+  border: 1px solid var(--primary-color);
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.buttonDiv .buttonSubmit:hover {
+  border: 1px solid var(--primary-color);
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: #5dacbd;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: max-content;
+  }
+  .buttonDiv {
+    display: block;
+  }
+  .buttonDiv button {
+    width: 100%;
+  }
+  .inputDiv.inputRadio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
